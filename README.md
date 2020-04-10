@@ -37,7 +37,7 @@ dois primeiros.
 
 Para o funcionamento dos programas é necessário ter instalado na máquina o
 Python3 e o Tkinter (pacote utilizado para a interface gráfica). Caso esteja
-utilizando um ambiente LINUX (e.g. Ubuntu ou Elementary) basta executar:
+utilizando um ambiente Linux (e.g. Ubuntu ou Elementary) basta executar:
 
 ```
 sudo apt-get update
@@ -74,17 +74,17 @@ ou
 ./servidor.py
 ```
 
-Nesse caso, o servidor será iniciado com os valores default ('' para o endereço
-do servidor e 10000 para a porta). Também podem ser passados os valores do endereço
-do servidor e da porta como argumentos. Para isso, basta inserir um comando no formato
-abaixo:
+Observação: utilizando o comando acima o servidor será iniciado com os valores
+default: '' para o endereço do servidor e 10000 para porta. Contudo, os valores
+do endereço do servidor e da porta também podem ser informados como argumentos.
+Para isso, basta utilizar um comando no formato abaixo:
 
 ```
 ./servidor.py <endereçoServidor> <porta>
 ```
 
 - Para executar o cliente diretamente no prompt (sem interface gráfica)
-insira um comando no formato:
+basta utilizar um comando no formato abaixo:
 
 ```
 ./cliente.py <endereçoServidor> <porta> <caminhoDoArquivo>
