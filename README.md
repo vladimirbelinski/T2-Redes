@@ -37,30 +37,55 @@ dois primeiros.
 
 Para o funcionamento dos programas é necessário ter instalado na máquina o
 Python3 e o Tkinter (pacote utilizado para a interface gráfica). Caso esteja
-utilizando um ambiente LINUX (e.g. Ubuntu ou Elementary) basta fazer:
+utilizando um ambiente LINUX (e.g. Ubuntu ou Elementary) basta executar:
 
+```
 sudo apt-get update
 sudo apt-get install python3-tk
+```
 
 ### Execução
 
 Os comandos abaixo foram testados no Elementary OS, uma distribuição de Linux
 baseada em Ubuntu. Para outros SOs ou distribuições podem ser necessárias
-algumas modificações.
+modificações.
 
-- Para executar o servidor utilizando a interface gráfica basta inserir o
-comando ./servidorgui.py
+- Para executar o servidor utilizando a interface gráfica:
 
-- Para executar o cliente utilizando a interface gráfica basta inserir o
-comando ./clientegui.py ou ./cliente.py
+```
+./servidorgui.py
+```
 
-- Para executar o servidor diretamente no prompt (sem interface gráfica)
-insira o comando ./servidor.py. Nesse caso, o servidor será iniciado com os
-valores default ('' para o endereço do servidor e 10000 para a porta).
-Também podem ser passados os valores do endereço do servidor e da porta como
-argumentos. Para isso, basta inserir um comando no formato
+- Para executar o cliente utilizando a interface gráfica:
+
+```
+./clientegui.py
+```
+
+ou
+
+```
+./cliente.py
+```
+
+- Para executar o servidor diretamente no prompt (sem interface gráfica):
+
+```
+./servidor.py
+```
+
+Nesse caso, o servidor será iniciado com os valores default ('' para o endereço
+do servidor e 10000 para a porta). Também podem ser passados os valores do endereço
+do servidor e da porta como argumentos. Para isso, basta inserir um comando no formato
+abaixo:
+
+```
 ./servidor.py <endereçoServidor> <porta>
+```
 
 - Para executar o cliente diretamente no prompt (sem interface gráfica)
-insira um comando no formato
+insira um comando no formato:
+
+```
 ./cliente.py <endereçoServidor> <porta> <caminhoDoArquivo>
+```
